@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.social-media-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg,#ffb517, #f519db);
+    color: #fff;
+    height: 9vh;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.links>*{
+    /* border-left: 1px solid #fff; */
+    margin:auto;
+    padding: 1em;
+    height: 100%;
+}
+/* .links>*:last-child{
+    border-right: 1px solid #fff;
+} */
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.details>*{
+    margin: auto 20px;
+}
+
+.link-button{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.4em 1em;
+    border-radius: 1.8em;
+}
+
+.link-button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.2s ease-out;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.icon>img{
+    margin-right: 0.2em;
+}
+
+.links ul{
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+.links ul li{
+    /* margin: 0 1em; */
+    padding: 0.5em 1em;
+    height: 100%;
+    /* background: #000; */
+}
+
+.links ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+a.buy-button{
+    background: #f7b955;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: rgba(0,0,0,0.4); 
+    color: white;
+    position:relative;
+}
+/* make this url image as background of main but dim only the background using main:before or main:after..  */
+main::before{
+    content: '';
+    background: url('https://freerangestock.com/sample/126752/two-business-people-talking-while-on-a-walk.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.slide{
+    max-width: 60vw;
+    position: relative;
+}
+
+.slide p.quote{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size:2em;
+    margin-bottom: 0.4em;
+    letter-spacing: 0.1em;
+}
+.slide h1{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.3em;
+}
+.slide p{
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+}
+.slide a{
+    margin-right: 1em;
+}
+.imp-button{
+    background: linear-gradient(90deg, #ffb517, #f519db) !important;
+    border: none !important;
+}
+.imp-button:hover{
+    color: #fff;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1em;
+    bottom: -20px;
+    /* right: -30px; */
+    background: linear-gradient(180deg, #ffb517, #f519db);
+    width: 3px;
+    border-radius: 2px;
+}
