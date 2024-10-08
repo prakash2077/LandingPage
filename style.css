@@ -144,10 +144,18 @@ main::before{
     margin-right: 1em;
 }
 .imp-button{
-    background: linear-gradient(90deg, #ffb517, #f519db) !important;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.6em 1em;
+    border-radius: 1.8em;
+    background: linear-gradient(90deg, #ffb517, #f519db);
     border: none !important;
 }
 .imp-button:hover{
+    background: linear-gradient(90deg, #ffb517, #f519db);
+    /* color: #000; */
+    transition: 0.2s ease-out;
     color: #fff;
 }
 
@@ -183,4 +191,144 @@ main::before{
 
 .hidden-slide{
     display: none;
+}
+
+.features{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, #f7b955, #f519db);
+    color: #fff;
+}
+.feature{
+    max-width: 300px;
+}
+.title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.title>i{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.title>p{
+    font-size: 1.5em;
+}
+
+.about-us{
+    height: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.about-us::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('https://img.freepik.com/premium-vector/dotted-world-map-white-background_132079-967.jpg?w=1060') center center/cover;
+    z-index: -1;
+    opacity: 20%;
+}
+.about-us img{
+    transform: rotateY(180deg);
+    width: 400px;
+}
+.about{
+    width: 50vw;
+}
+.about h2{
+    font-family: 'Alumni Sans', sans-serif;;
+    font-size: 3em;
+    position: relative;
+}
+hr{
+    width: 60px;
+    height: 3px;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #f519db, #f7b955);
+    margin-bottom: 1em;
+}
+
+.sub-heading{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+
+.description{
+    color: #555;
+    font-size: large;
+    margin-bottom: 1.4em;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.1);
+}
+.services::before{
+    content: '';
+    background: url('https://img.freepik.com/premium-vector/dotted-world-map-white-background_132079-967.jpg?w=1060');
+    /* background-size: cover; */
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 20%;
+}
+
+.container{
+    max-width: 80vw;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #000; */
+}
+.image{
+    margin-right: 1em;
+    position: relative;
+}
+.content{
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0 0 30px;
+    padding-right:20px ;
+    box-shadow: 2px 2px 10px rgb(215, 215, 215) ;
+}
+.services img{
+    width: 300px;
+}
+.services i{
+    background: linear-gradient(90deg, #f519db, #f7b955);
+    font-size: 25px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0.4em;
+    margin-right: 10px;
 }
