@@ -1,0 +1,26 @@
+.social-media-links{
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.links{
+    padding-bottom: 0.2em;
+    font-size: 0.8em;
+}
+.details{
+    padding-bottom: 0.8em;
+}
+nav{
+    flex-direction: column;
+}
+.features{
+    flex-direction: column;
+}
+.feature{
+    margin: 2.5em;
+}
+.images{
+    flex-direction: column;
+}
+.image{
+    margin-bottom: 3em;
+}

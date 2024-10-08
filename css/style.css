@@ -16,7 +16,7 @@ body{
     align-items: center;
     background: linear-gradient(90deg,#ffb517, #f519db);
     color: #fff;
-    height: 9vh;
+    min-height: 9vh;
 }
 .links{
     display: flex;
@@ -62,7 +62,11 @@ nav{
     align-items: center;
     background: #fff;
 }
-
+nav img{
+    width: 40px;
+    position: relative;
+    top: 3px;
+}
 .icon{
     display: flex;
     justify-content: center;
@@ -78,6 +82,9 @@ nav{
     display: flex;
     list-style-type: none;
     height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .links ul li{
@@ -101,12 +108,11 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    min-height: 70vh;
     background: rgba(0,0,0,0.4); 
     color: white;
     position:relative;
 }
-/* make this url image as background of main but dim only the background using main:before or main:after..  */
 main::before{
     content: '';
     background: url('https://freerangestock.com/sample/126752/two-business-people-talking-while-on-a-walk.jpg') no-repeat center center/cover;
@@ -194,7 +200,7 @@ main::before{
 }
 
 .features{
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -222,11 +228,12 @@ main::before{
 }
 
 .about-us{
-    height: 40vw;
+    min-height: 40vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    padding: 2em;
 }
 .about-us::before{
     content: '';
@@ -244,7 +251,7 @@ main::before{
     width: 400px;
 }
 .about{
-    width: 50vw;
+    max-width: 50vw;
 }
 .about h2{
     font-family: 'Alumni Sans', sans-serif;;
@@ -278,7 +285,7 @@ hr{
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 70vh;
+    min-height: 70vh;
     background-color: rgba(0,0,0,0.1);
 }
 .services::before{
@@ -298,7 +305,11 @@ hr{
 .container{
     max-width: 80vw;
 }
-
+.container>h2{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 2em;
+    margin: 1em 0 0.2em 0;
+}
 .images{
     display: flex;
     justify-content: space-around;
@@ -323,6 +334,7 @@ hr{
 }
 .services img{
     width: 300px;
+    border-radius: 5px;
 }
 .services i{
     background: linear-gradient(90deg, #f519db, #f7b955);

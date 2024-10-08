@@ -1,0 +1,60 @@
+.social-media-links{
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.links{
+    padding-bottom: 0.2em;
+    font-size: 0.8em;
+}
+.details{
+    flex-direction: column;
+    padding-bottom: 0.8em;
+}
+nav{
+    flex-direction: column;
+}
+.features{
+    flex-direction: column;
+}
+.feature{
+    margin: 2.5em;
+}
+.images{
+    flex-direction: column;
+}
+.image{
+    margin-bottom: 3em;
+    margin-right: 0;
+}
+.about-us{
+    flex-direction: column;
+    padding: 0.4em;
+}
+.about-us img{
+    margin-top: 3em;
+    width: 80vw;
+}
+.about{
+    max-width: 90vw;
+}
+.slide{
+    max-width: 90vw;
+    position: relative;
+}
+.slide p.quote{
+    font-size:1.4em;
+    letter-spacing: 0.1em;
+}
+.slide h1{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.3em;
+}
+.slide p{
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+.slide a{
+    font-size: small;
+}
