@@ -99,7 +99,7 @@ a.buy-button{
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 70vh;
     background: rgba(0,0,0,0.4); 
@@ -161,4 +161,26 @@ main::before{
     background: linear-gradient(180deg, #ffb517, #f519db);
     width: 3px;
     border-radius: 2px;
+}
+.bubbles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: red; */
+    height: 14vh;
+}
+.bubble-1,.bubble-2,.bubble-3{
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1.4px solid white;
+}
+.focus{
+    background: linear-gradient(45deg, #ffb517, #f519db);
+    border: none;
+}
+
+.hidden-slide{
+    display: none;
 }
